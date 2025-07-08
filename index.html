@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌸 Feliz Cumpleaños, María Liz 🌸</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffd6e7, #ffe4f1, #fbeaff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    .gift {
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+  <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl p-8 max-w-lg text-center border-4 border-pink-300">
+    
+    <h1 class="text-4xl font-bold text-pink-600 mb-4 animate-bounce">🎀 Feliz Cumpleaños, María Liz 🎀</h1>
+
+    <img src="https://i.pinimg.com/564x/95/2c/ae/952cae403e23edc139d0156e5cfaa731.jpg" alt="Kuromi, My Melody y Cinnamoroll" class="rounded-xl mb-6 shadow-lg border-2 border-pink-200">
+
+    <p class="text-lg text-pink-700 leading-relaxed">
+      Hoy celebramos el día más tierno del año, el día en que nació la persona más dulce de este universo rosado: <strong>María Liz</strong>.  
+      <br><br>
+      Quiero que este espacio sea como tú: lleno de magia, dulzura y alegría, rodeado de nuestros personajes favoritos, porque tú eres la estrella más brillante en mi cielo.
+      <br><br>
+      💖 Gracias por existir, princesa 💖
+    </p>
+
+    <button onclick="openGift()" class="gift mt-6 px-6 py-2 rounded-full bg-pink-400 hover:bg-pink-500 text-white text-lg shadow-md transition">
+      🎁 Ábreme 🎁
+    </button>
+
+    <button onclick="confetti()" class="mt-4 px-6 py-2 rounded-full bg-pink-300 hover:bg-pink-400 text-white text-lg shadow-md transition">
+      🎉 Confetti 🎉
+    </button>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    function confetti() {
+      confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.6 },
+        colors: ['#ff69b4', '#ffb6c1', '#ffe4e1'],
+      });
+    }
+
+    function openGift() {
+      alert("🎂 ¡Feliz cumpleaños, mi amor! María Liz 💖");
+    }
+  </script>
+
+</body>
+</html>
